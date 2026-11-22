@@ -74,7 +74,7 @@ export function Preview({
             <span className="compare-badge">ваше фото</span>
           </div>
         )}
-        <span className="scene-caption">{activeLabel} · реальный try-on</span>
+        <span className="scene-caption">{activeLabel} · реальный кадр</span>
       </div>
     </div>
   )

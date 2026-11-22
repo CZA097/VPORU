@@ -41,15 +41,15 @@ interface ServerResponse {
 }
 
 /**
- * Реальная примерка через сервер и Nano Banana.
+ * Реальная примерка через сервер.
  * Ключ GenAPI живёт только на сервере; браузер отправляет два фото и ждёт ответ.
  */
 export const genApiProvider: TryOnProvider = {
   id: 'genapi',
-  label: 'Nano Banana',
+  label: 'AI-примерка',
   ready: true,
   async generate(request, onProgress, options?: GenerateOptions) {
-    onProgress(request.items.length > 1 ? 'Собираем вещи в один образ' : 'Загружаем фото в Nano Banana')
+    onProgress(request.items.length > 1 ? 'Собираем вещи в один образ' : 'Загружаем фото')
 
     let stage = 0
     const stages = [
@@ -105,7 +105,7 @@ export const genApiProvider: TryOnProvider = {
           cost: data.meta?.cost,
           note:
             data.meta?.note ??
-            'Реальный try-on Nano Banana. Спереди — готовый кадр, сбоку и сзади — демо-макет.',
+            'Готовый кадр примерки.',
         },
       }
     } finally {

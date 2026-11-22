@@ -59,10 +59,7 @@ export function StepBackground() {
         <aside className="result-panel">
           <div className="bg-section">
             <h3 className="panel-title">Сохранение</h3>
-            <Note>
-              Реальный кадр спереди приходит от Nano Banana с исходным фоном. Бок и зад эта модель не
-              генерирует. Скачайте PNG или вернитесь к примерке.
-            </Note>
+            <Note>Скачайте PNG или вернитесь к примерке.</Note>
           </div>
 
           <label className="switch">
@@ -130,10 +127,7 @@ export function StepBackground() {
             </dl>
           </div>
 
-          <p className="meta-note">
-            Спереди — реальный кадр Nano Banana. Бок и зад эта модель не генерирует. Фон — из исходного
-            фото.
-          </p>
+          <p className="meta-note">Кадр сохранён в высоком разрешении.</p>
         </aside>
       </div>
 

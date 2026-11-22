@@ -237,7 +237,7 @@ export async function generateTryOn({
       model: MODEL,
       ms: Date.now() - started,
       cost: Number(result.cost || GENAPI_PRICE),
-      note: 'Реальный try-on Nano Banana. Фон и кадр — из исходного фото.',
+      note: 'Готовый кадр примерки.',
     },
   }
 }

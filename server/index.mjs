@@ -32,7 +32,7 @@ const providers = {
   genapi: {
     configured: Boolean(process.env.GENAPI_KEY),
     mode: 'server',
-    label: 'Nano Banana',
+    label: 'AI-примерка',
     price: genapi.GENAPI_PRICE,
   },
   fashn: {

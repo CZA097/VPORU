@@ -62,15 +62,15 @@ export function StepTryOn() {
       <StepHead
         index="04 — примерка"
         title="Реальный кадр"
-        lead="Nano Banana примеряет вещь на вашем фото. Спереди — готовый кадр; бок и зад эта модель не генерирует."
-        aside={<span className="step-aside-note">Nano Banana</span>}
+        lead="AI примеряет вещь на вашем фото. Спереди — готовый кадр."
+        aside={<span className="step-aside-note">AI-примерка</span>}
       />
 
       {state.status === 'working' && (
         <div className="working">
           <div className="working-stage working-stage-wait" aria-hidden="true">
             <span className="working-spinner" />
-            <span className="working-mark">Nano Banana</span>
+            <span className="working-mark">AI-примерка</span>
           </div>
           <div className="working-copy" role="status" aria-live="polite">
             <span className="working-kicker">собираем примерку</span>
@@ -78,9 +78,7 @@ export function StepTryOn() {
             <div className="working-bar">
               <span />
             </div>
-            <p className="working-note">
-              Обычно 20–30 секунд. Фото уходят в GenAPI только на время генерации.
-            </p>
+            <p className="working-note">Обычно 20–30 секунд.</p>
           </div>
         </div>
       )}
@@ -146,10 +144,7 @@ export function StepTryOn() {
               Спишется {price} за одну генерацию. Нажмите «Подтвердить» ещё раз, чтобы запустить.
             </Note>
           ) : (
-            <Note>
-              Nano Banana · {price} за кадр · обычно 20–30 секунд. Фото уходят в GenAPI только на время
-              генерации. Бок и зад эта модель не генерирует — останется кадр спереди.
-            </Note>
+            <Note>{price} за кадр · обычно 20–30 секунд.</Note>
           )}
         </div>
       )}
@@ -233,9 +228,6 @@ export function StepTryOn() {
             </div>
 
             <p className="meta-note">{state.result.meta.note}</p>
-            <p className="meta-note">
-              Бок и зад Nano Banana не генерирует. Фон реального кадра — из исходного фото.
-            </p>
           </aside>
         </div>
       )}
