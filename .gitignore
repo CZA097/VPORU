@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.local
+tests/shots/
+tests/fixtures/user-*.jpg
+tests/fixtures/clipboard.png
+docs/genapi-test.png
+docs/genapi-compare.png
+.playwright-mcp/
+*.log
+.DS_Store

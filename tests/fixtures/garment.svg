@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <linearGradient id="fabric" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a9513a" />
+      <stop offset="0.55" stop-color="#93422d" />
+      <stop offset="1" stop-color="#7a3524" />
+    </linearGradient>
+    <linearGradient id="fold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.16" />
+      <stop offset="0.5" stop-color="#000000" stop-opacity="0.12" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.08" />
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#5d2a1c" flood-opacity="0.18" />
+    </filter>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="2.2" fill="#e7c7b4" opacity="0.5" />
+      <circle cx="25" cy="24" r="1.6" fill="#e7c7b4" opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <rect width="800" height="800" fill="#ffffff" />
+
+  <g filter="url(#shadow)">
+    <path d="M330 128 L470 128 L486 196 L520 210 C584 240 612 330 624 430 L648 640 C650 660 638 672 618 672 L182 672 C162 672 150 660 152 640 L176 430 C188 330 216 240 280 210 L314 196 Z" fill="url(#fabric)" />
+    <path d="M330 128 L470 128 L486 196 L520 210 C584 240 612 330 624 430 L648 640 C650 660 638 672 618 672 L182 672 C162 672 150 660 152 640 L176 430 C188 330 216 240 280 210 L314 196 Z" fill="url(#dots)" />
+
+    <path d="M400 200 L400 668" stroke="#6d2d1f" stroke-width="2" opacity="0.5" />
+    <path d="M330 128 C360 180 440 180 470 128 L458 118 C432 154 368 154 342 118 Z" fill="#7a3524" />
+
+    <path d="M286 208 C250 320 238 470 248 660 L214 660 C204 470 222 318 262 210 Z" fill="url(#fold)" opacity="0.6" />
+    <path d="M514 208 C550 320 562 470 552 660 L586 660 C596 470 578 318 538 210 Z" fill="url(#fold)" opacity="0.6" />
+
+    <path d="M300 392 C356 378 444 378 500 392 L506 426 C444 412 356 412 294 426 Z" fill="#6f2e20" opacity="0.85" />
+    <path d="M394 392 L400 510 L414 392 Z" fill="#e7c7b4" opacity="0.5" />
+    <path d="M414 392 L420 510 L434 392 Z" fill="#e7c7b4" opacity="0.35" />
+
+    <path d="M250 660 C330 676 470 676 550 660" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.18" />
+  </g>
+</svg>
