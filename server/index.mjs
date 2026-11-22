@@ -7,6 +7,8 @@ const here = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(here, '..')
 const isProd = process.argv.includes('--prod') || process.env.NODE_ENV === 'production'
 const port = Number(process.env.PORT || 4400)
+const bindHost = process.env.HOST || '127.0.0.1'
+const displayHost = bindHost === '0.0.0.0' ? '127.0.0.1' : bindHost
 
 // .env без зависимостей: Node 20.12+ умеет читать файл сам.
 try {
@@ -326,6 +328,6 @@ if (isProd) {
   app.use(vite.middlewares)
 }
 
-app.listen(port, '127.0.0.1', () => {
-  console.log(`Впору запущено: http://127.0.0.1:${port}`)
+app.listen(port, bindHost, () => {
+  console.log(`Впору запущено: http://${displayHost}:${port}`)
 })
